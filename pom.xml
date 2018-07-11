@@ -7,18 +7,6 @@
   <groupId>org.kie</groupId>
   <artifactId>lienzo-grid</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>8</source>
-          <target>8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 
   <name>Lienzo Grid component</name>
   <description>A pure Lienzo/GWT grid component</description>
@@ -29,9 +17,9 @@
     <version.org.kie>7.9.0-SNAPSHOT</version.org.kie>
     <version.com.google.gwt>2.8.2</version.com.google.gwt>
     <version.org.gwtbootstrap3>0.9.3</version.org.gwtbootstrap3>
-    <version.java>1.8</version.java>
-    <maven.compiler.source>${version.java}</maven.compiler.source>
-    <maven.compiler.target>${version.java}</maven.compiler.target>
+    <version.org.assertj>3.8.0</version.org.assertj>
+    <version.junit>4.12</version.junit>
+    <version.org.mockito>1.10.19</version.org.mockito>
   </properties>
 
   <dependencies>
@@ -68,6 +56,40 @@
       </exclusions>
     </dependency>
 
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${version.org.assertj}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${version.org.mockito}</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>

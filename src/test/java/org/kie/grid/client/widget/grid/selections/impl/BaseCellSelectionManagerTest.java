@@ -27,11 +27,6 @@ import com.ait.lienzo.test.LienzoMockitoTestRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.kie.grid.client.widget.grid.GridWidget;
-import org.kie.grid.client.widget.grid.renderers.grids.GridRenderer;
-import org.kie.grid.client.widget.grid.renderers.grids.impl.BaseGridRendererHelper;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mock;
 import org.kie.grid.client.model.Bounds;
 import org.kie.grid.client.model.GridCell;
 import org.kie.grid.client.model.GridColumn;
@@ -48,6 +43,8 @@ import org.kie.grid.client.widget.grid.renderers.grids.impl.BaseGridRendererHelp
 import org.kie.grid.client.widget.grid.selections.CellSelectionManager;
 import org.kie.grid.client.widget.grid.selections.SelectionExtension;
 import org.kie.grid.client.widget.layer.impl.DefaultGridLayer;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

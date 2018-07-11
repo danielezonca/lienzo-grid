@@ -22,11 +22,10 @@ import com.ait.lienzo.test.LienzoMockitoTestRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.kie.grid.client.widget.grid.renderers.columns.GridColumnRenderer;
-import org.mockito.Mock;
 import org.kie.grid.client.model.GridCellValue;
 import org.kie.grid.client.model.GridColumn;
 import org.kie.grid.client.widget.grid.renderers.columns.GridColumnRenderer;
+import org.mockito.Mock;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.junit.Assert.assertEquals;
