@@ -89,6 +89,31 @@
           <target>8</target>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>2.8.2</version>
+        <configuration>
+          <runTarget>LienzoTests.html</runTarget>
+          <logLevel>TRACE</logLevel>
+
+          <compileSourcesArtifacts>
+            <compileSourcesArtifact>org.gwtbootstrap3:gwtbootstrap3</compileSourcesArtifact>
+          </compileSourcesArtifacts>
+
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+
+      </plugin>
+
+
     </plugins>
   </build>
 
