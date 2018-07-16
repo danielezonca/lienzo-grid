@@ -1,0 +1,1 @@
+WIP module extracted from [uberfire-wires-core-grids](https://github.com/kiegroup/appformer/tree/master/uberfire-extensions/uberfire-wires/uberfire-wires-core/uberfire-wires-core-grids)
